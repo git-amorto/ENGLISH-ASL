@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English ASL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <ul style="padding: 0px;">
+            <li style="padding-top: 0px; padding-bottom: 0px;">
+                <div class="searchbar">
+                <button class="searchbutton" onclick="checkfordisp()">
+                    <i class="fa-solid fa-magnifying-glass">🔍︎</i>
+                </button>
+                <input type="text" placeholder="search" class="searchmain" id="searchbar">
+                <button class="searchbuttoncl" id="sbtn">
+                    Search
+                </button>
+            </div>
+            </li>
+        </ul>
+        <button class="invisbutton" onclick="togglemenuoff()"><a href="#home" style="color: white;">Home</a></button>
+        <button class="invisbutton" onclick="togglemenuoff()"><a href="#about" style="color: white;">About</a></button>
+        <button class="invisbutton" onclick="togglemenuoff()"><a href="#FAQ" style="color: white;">FAQs</a></button>
+        <button class="invisbutton" onclick="togglemenuoff()"><a href="#contact" style="color: white;">Contact</a></button>
+    </div>
+    <div class="navbar" id="navbar">
+        
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <ul style="padding: 0px;">
+            <li onclick="togglemenuon()" id="togmenu">
+                <i class="fa-solid fa-bars">☰</i>
+            </li>
+        </ul>
+        <a href="#"><img src="img/logo.png" alt="logo" style="width: 250px; height: auto;"></a>
+        </div>
+        <ul style="margin: 10px;">
+
+            <li id="homesec">
+
+                <a href="#home">Home</a>
+            </li>
+
+            <li id="aboutsec">
+
+                <a href="#about">About</a>
+            </li>
+
+            <li id="faqsec">
+
+                <a href="#FAQ">FAQ</a>
+            </li>
+
+            <li id="consec">
+
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <button class="botbtn" onclick="botshow()" id="botbtn"><i class="fa-solid fa-message" id="boticon">bot</i></button>
+    <div class="centercontainer fixed" id="botwin">
+<div class="botdiv">
+
+<div class="info">
+    <img src="img/agni.png" alt="agni, our bot (icon)" style="width: 40px; height: 40px; border-radius: 200px; margin: 10px;">
+    <p style="margin: 10px; font-size: 30px;">Agni</p>
+    <button class="botesc" onclick="bothide()" id="botesc"><i class="fa-solid fa-xmark" id="boticon">X</i></button>
+</div>
+
+<div class="msgarea" id="msgarea">
+<div class="botmsg">Hello, how may i assist you today?</div>
+</div>
+<div class="inparea">
+<input type="text" class="txtinp" id="userprompt">
+<button class="searchbuttoncl" style="display: block; font-size: 20px; background-color: rgb(209, 1, 91);" id="sendbtn"><i class="fa-solid fa-circle-chevron-right">send</i></button>
+</div>
+</div>
+</div>
+        <div class="home" id="home">
+            <p style="color: white; font-size: 80px; font-family: 'Times New Roman', Times, serif; font-weight: bold; margin: 20px;">English ASL</p>
+            <p style="color: rgb(189, 187, 187); font-size: 26px; font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Guiding minds, nurturing souls: where teachers inspire and students flourish.</p>
+        </div>
+
+
+        <div class="about" id="about">
+            <div>
+            <p class="aboutheading">About</p>
+
+            <p class="aboutdescription">
+
+                Welcome to our website, where we celebrate the exceptional journey led by our revered teacher, Rajiv Sir. Central to our mission is an innovative Subject Enrichment (ASL) initiative, curated by Rajiv Sir himself, aimed at expanding horizons beyond conventional classroom boundaries.
+
+Under Rajiv Sir's expert guidance, we embark on a captivating exploration of cinema, utilizing movies not merely for entertainment but as powerful tools for refining speaking skills and enhancing communication abilities. Through lively discussions, interactive sessions, and immersive experiences, Rajiv Sir transforms movie screenings into vibrant hubs of learning, where each frame serves as a gateway to discovery and personal growth.
+
+Beyond the structured curriculum, Rajiv Sir cultivates an atmosphere of joy and camaraderie, where learning becomes a source of inspiration and delight. Whether engaging in thought-provoking conversations, sharing laughter-filled moments, or experiencing profound insights, every ASL session with Rajiv Sir reflects the limitless potential of education when infused with passion, creativity, and genuine care.
+
+Join us on this enriching journey as we celebrate the magic of learning and the invaluable relationship between teacher and student. Together, we honor the transformative power of education, embracing every opportunity to thrive and evolve. Welcome to a world where each moment is an invitation to discover, connect, and flourish.
+
+            </p>
+        </div>
+
+        </div>
+
+
+        <section class="faqs" id="FAQ">
+            <h2 class="title" style="margin: 50px;">FAQs</h2>
+    
+            <!--a single question is structured like this-->
+
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>What exactly is this ASL project with Rajiv Sir?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>It's a unique classroom initiative where we watch movies, engage in discussions, and work on our speaking skills in a relaxed and enjoyable setting.</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+
+
+            <!--end of this question-->
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>What can I expect during these ASL sessions?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>Get ready for movie screenings followed by lively discussions. We'll explore themes, characters, and practice speaking skills along the way.</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>Is this like an extempore or a debate?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>Not exactly! It's more about casual conversations inspired by the movies we watch. Think of it as a friendly exchange of ideas and opinions.</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>Will there be assignments or tests?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>Nope! No formal assessments here. It's all about learning through conversation and enjoying the movie experience together.</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>How does fire suppression impact ecosystems?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>Historically, fire suppression disrupted natural fire cycles, leading to fuel buildup and larger, more intense wildfires. It also altered ecosystems, affecting plant and animal communities that depend on fire for their survival. A balanced fire management approach has emerged to mitigate these impacts.</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>Can I suggest movies to watch during the sessions?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>Absolutely! We love recommendations. Feel free to share your favorite movies, and we'll add them to our watchlist.</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+
+            <div class="faq"><!--a new set of q/a-->
+
+                <div class="question"><!--question-->
+                    <h3>How long do these ASL sessions last?</h3><!--the question-->
+
+                    <svg width="15" height="10" viewbox="0 0 42 25"><!--icon-->
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path><!--icon-->
+                    </svg><!--icon-->
+
+                </div><!--end of question-->
+
+                <div class="answer"><!--the answer-->
+                    <!--the answer--><p>Typically, sessions run for about an hour or so. Enough time to watch a movie and have a good discussion afterward..</p>
+                </div><!--end of answer-->
+
+            </div><!--end of one set of q/a-->
+            <!-- Add more FAQs here if needed -->
+    
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="title" style="margin: 50px; margin-bottom: 0px;">Contact us.</h1>
+            <h1 style="color: rgb(199, 199, 199);">- Lets get in touch</h1>
+            <div style="display: flex; flex-wrap: wrap; margin: 50px;">
+            <div class="coptions">
+                <p class="headingc">Email:</p>
+                <p style="color: rgb(119, 119, 119);">basakanabil@gmail.com</p>
+            </div>
+            <div class="coptions">
+                <p class="headingc">Email:</p>
+                <p style="color: rgb(119, 119, 119);">amorto2029@gmail.com</p>
+            </div>
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/dacf4fa1ce.js" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+        <script src="agni.js"></script>
+</body>
+</html>
